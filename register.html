@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./roadmap.html">Roadmap</a></li>
+            <li class="active"><a href="./register.html">Registeration</a></li>
+            <li><a href="https://www.iti.gov.eg/iti/home">Contact</a></li>
+        </ul>
+
+        <div id="logo">
+            <img src="./images/ITI_logo.png" alt="">
+        </div>
+
+    </div>
+
+    <div id="form-container">
+        <h2>Register - Create Account</h2>
+        <h4 style="background-color: #34a3a3">Fields marked with <span style="color:red">*</span> are compulsory fields</h4>
+        <form action="">
+            <table>
+                <tr>
+                    <td colspan="4" class="darkblue"><span style="color:red">*</span>Your Name</td>
+                    <td colspan="8" ><input required type="text" size="50" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="darkblue"><span style="color:red">*</span>Email Address</td>
+                    <td colspan="8" ><input required type="email" size="75" id="email" name="email"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="darkblue">Alternative Email Address</td>
+                    <td colspan="8" ><input type="email" size="75" id="altemail" name="altemail"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="darkblue">Your Phone</td>
+                    <td colspan="8" >
+                        Country Code - City Code - Phone Number <br>
+                        <input type="text" size="9" id="countrycode" name="countrycode" pattern="[0-9]{5}">
+                        <input type="text" size="5" id="citycode" name="citycode" pattern="[0-9]{3}">
+                        <input type="text" size="20" id="phonenumber" name="phonenumber" pattern="[0-9]{12}">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="darkblue">Mobile Phone</td>
+                    <td colspan="8" ><input type="number" size="50" pattern="[0-9]{10}" id="mobilephone" name="mobilephone"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="darkblue"><span style="color: red;">*</span>Your Postal Address</td>
+                    <td colspan="8" ><textarea required name="postaladdress" id="postaladdress" cols="70" rows="7"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="darkblue"><span style="color: red;">*</span>Country</td>
+                    <td colspan="8" >
+                        <select name="nationality" id="nationality" style="width: 350px;" required>
+                            <option value="" selected disabled>---select--</option>
+                            <option value="egypt">Egypt</option>
+                            <option value="otherwise">otherwise</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="darkblue"><span style="color: red;">*</span>Password</td>
+                    <td colspan="8" ><input required type="password" size="50" id="pw" name="pw"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="darkblue"><span style="color: red;">*</span>Re-enter Password</td>
+                    <td colspan="8" ><input required type="password" size="50" id="verifypw" name="verifypw"></td>
+                </tr>
+            </table>
+
+            <div class="center-div">
+                <input type="checkbox" name="" id=""> I accept the <a href="">Terms of Use</a>
+            </div>
+
+            <div class="center-div">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+    </div>
+    </form>
+
+    <hr>
+
+    <div style="text-align: center; color: blue">
+        Copyright 2021 by Noha Salah &copy; .All Rights Reserved.
+    </div>
+
+
+
+</body>
